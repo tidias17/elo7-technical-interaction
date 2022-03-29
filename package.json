@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@material-ui/core": "^4.12.3",
+    "@types/humps": "^2.0.1",
     "@types/styled-components": "^5.1.22",
     "axios": "^0.25.0",
     "click-management-components": "^0.1.39",
@@ -28,10 +29,10 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^7.0.4",
     "lint-staged": "^11.1.2",
     "prettier": "^2.3.2",
-    "typescript": "^4.3.5",
-    "husky": "^7.0.4"
+    "typescript": "^4.3.5"
   },
   "lint-staged": {
     "**/*.{tsx, ts}": "yarn lint --fix"
