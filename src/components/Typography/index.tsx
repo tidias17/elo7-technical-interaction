@@ -1,48 +1,18 @@
-import {
-  StyledAccountPageTitle,
-  StyledBoxTitle,
-  StyledComplementTitle,
-  StyledContainer,
-  StyledSectionPage,
-  StyledSectionTitle,
-  StyledTitle,
-  StyledTypography
-} from './styled'
+import { Container } from './styled'
 
-export const Title = ({ children }: any) => {
-  return
-  ;<StyledTitle>{children}</StyledTitle>
+type TypographyProps = {
+  type: string
+  children: string
+  href?: string
 }
 
-export const SecondaryText = ({ children, italic }: any) => {
-  return <StyledTypography $italic={italic}>{children}</StyledTypography>
-}
-
-export const SectionTitle = ({ children, complementTitle, spacing }: any) => {
-  return (
-    <StyledSectionTitle $spacing={spacing}>
+const Typography = ({ type, children, href }: TypographyProps) =>
+  type === 'link' ? (
+    <Container type={type} href={href}>
       {children}
-      {complementTitle && (
-        <StyledComplementTitle>{complementTitle}</StyledComplementTitle>
-      )}
-    </StyledSectionTitle>
+    </Container>
+  ) : (
+    <Container type={type}>{children}</Container>
   )
-}
 
-export const BoxTitle = (children: any) => (
-  <StyledBoxTitle>{children}</StyledBoxTitle>
-)
-
-export const Container = (children: any) => (
-  <StyledContainer>{children}</StyledContainer>
-)
-
-export const AccountPageTitle = ({ children, textAlign = 'center' }: any) => (
-  <StyledAccountPageTitle $textAlign={textAlign}>
-    {children}
-  </StyledAccountPageTitle>
-)
-
-export const SectionPage = (children: any) => (
-  <StyledSectionPage>{children}</StyledSectionPage>
-)
+export default Typography

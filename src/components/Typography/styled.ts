@@ -1,46 +1,60 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { theme } from 'theme'
 
-import { Typography } from '@material-ui/core'
-
-export const StyledTypography = styled(Typography)<{ $italic?: string }>`
-  && {
-    font-style: ${({ $italic }) => ($italic ? 'italic' : 'auto')};
+export const typographys: any = {
+  title: {
+    tag: 'h1',
+    style: css`
+      font-size: 28px;
+      font-weight: 700;
+      color: ${theme.colors.white};
+    `
+  },
+  subtitle: {
+    tag: 'h2',
+    style: css`
+      font-size: 18px;
+      font-weight: 700;
+      color: ${theme.colors.normal};
+      text-transform: uppercase;
+    `
+  },
+  complementarytitle: {
+    tag: 'h3',
+    style: css`
+      font-size: 18px;
+      font-weight: 600;
+      color: ${theme.colors.brand};
+    `
+  },
+  link: {
+    tag: 'a',
+    style: css`
+      font-size: 20px;
+      font-weight: 600;
+      color: ${theme.colors.link};
+      text-transform: uppercase;
+      text-decoration: none;
+    `
+  },
+  normal: {
+    tag: 'p',
+    style: css`
+      font-size: 14px;
+      font-weight: 400;
+      color: ${theme.colors.normal};
+    `
   }
-`
+}
 
-export const StyledTitle = styled.p`
-  width: 100%
-  font-weight: 700
-`
-
-export const StyledSectionTitle = styled.p<{ $spacing: string }>`
-  width: 100% ${({ $spacing }) => $spacing && 'padding: 16px'};
-`
-
-export const StyledComplementTitle = styled.span`
-  font-size: 12px
-  font-style: italic
-`
-
-export const StyledBoxTitle = styled.h3`
-  color: ${theme.colors.grey700}
-  font-size: 16px
-  font-weight: bold
-  line-height: 1.25em
-  margin: 0 0 8px 0
-`
-
-export const StyledContainer = styled.div`
-  padding: 15px;
-`
-
-export const StyledAccountPageTitle = styled.h2<{ $textAlign: string }>`
-  font-size: 18px
-  color: ${theme.colors.grey700}
-  text-align: ${({ $textAlign }) => $textAlign}
-`
-
-export const StyledSectionPage = styled.section`
-  margin-bottom: 2rem;
+export const Container = styled.div.attrs(({ type, href }: any) => ({
+  type,
+  href,
+  as: typographys[type].tag,
+  styles: typographys[type].style
+}))`
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  ${(props) => props.styles};
 `

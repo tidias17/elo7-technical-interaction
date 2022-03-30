@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import SectionHeader from 'modules/SectionHeader'
 
 const Home: NextPage = () => {
   return (
@@ -15,7 +16,7 @@ const Home: NextPage = () => {
           rel="stylesheet"
         />
       </Head>
-
+      <SectionHeader />
       <main>
         <h1>Estrutura Inicial</h1>
       </main>
