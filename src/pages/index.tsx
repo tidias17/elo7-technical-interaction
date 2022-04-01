@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import SectionHeader from 'modules/SectionHeader'
 import SectionGroup from 'modules/SectionGroup'
+import SectionValues from 'modules/SectionValues'
 
 const Home: NextPage = () => {
   return (
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
       </Head>
       <SectionHeader />
       <SectionGroup />
+      <SectionValues />
     </>
   )
 }

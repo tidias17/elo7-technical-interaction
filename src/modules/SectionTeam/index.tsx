@@ -27,10 +27,11 @@ const SectionTeam = () => {
         Fora de série
       </Typography>
       <StyledMembers>
-        {team.map((item) =>
+        {team.map((item, index) =>
           <img
             src={`./images/${item.id}.png`}
             alt={`Membro do time | ${item.id}`}
+            key={index}
           />
         )}
       </StyledMembers>
