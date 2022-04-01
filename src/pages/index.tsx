@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import SectionHeader from 'modules/SectionHeader'
+import SectionGroup from 'modules/SectionGroup'
 
 const Home: NextPage = () => {
   return (
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
         />
       </Head>
       <SectionHeader />
+      <SectionGroup />
       <main>
         <h1>Estrutura Inicial</h1>
       </main>
