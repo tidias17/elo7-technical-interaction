@@ -16,3 +16,12 @@ export const StyledLink = styled.section`
   display: felx;
   justify-content: center;
 `;
+
+export const StyledEnvironment = styled.section`
+  width: 85%;
+  height: 350px;
+  margin: 20px auto;
+  background-image: url(./images/foto-bottom.png);
+  background-size: cover;
+  background-position: center;
+`;

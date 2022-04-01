@@ -2,7 +2,8 @@ import IndividualValue from "components/IndividualValue";
 import Link from "components/Link";
 import {
   StyledContainer,
-  StyledLink
+  StyledLink,
+  StyledEnvironment
 } from "./styled";
 
 const SectionValue = () => {
@@ -32,6 +33,7 @@ const SectionValue = () => {
       <StyledLink>
         <Link text="Saiba Mais >>" href="#" />
       </StyledLink>
+      <StyledEnvironment />
     </StyledContainer>
   )
 }
