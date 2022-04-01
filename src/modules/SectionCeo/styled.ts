@@ -12,8 +12,10 @@ export const StyledContainer = styled.section`
 export const StyledVideo = styled.section`
   flex: 1;
   padding: 20px;
+  display: flex;
+  justify-content: center;
   img {
-    width: 100%;
+    width: 85%;
   }
   @media(max-width: 840px) {
     flex: initial;
@@ -33,5 +35,16 @@ export const StyledContent = styled.section`
   @media(max-width: 840px) {
     flex: initial;
     width: 100%;
+  }
+`;
+
+export const StyledDescription = styled.section`
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  @media(min-width: 841px) and (max-width: 1199px) {
+    -webkit-line-clamp: 5;
   }
 `;
