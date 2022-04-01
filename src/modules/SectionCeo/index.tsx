@@ -14,7 +14,7 @@ const SectionCeo = () => {
         <img src="./images/placeholder-video.png" />
       </StyledVideo>
       <StyledContent>
-      <Typography type="subtitle">
+        <Typography type="subtitle">
           Palavra do ceo
         </Typography>
         <Typography type="complementarytitle">

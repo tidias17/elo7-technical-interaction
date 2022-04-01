@@ -2,7 +2,7 @@ import { Container } from './styled'
 
 type TypographyProps = {
   type: string
-  children: string
+  children: any
   href?: string
 }
 
