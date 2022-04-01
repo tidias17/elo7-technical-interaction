@@ -19,9 +19,6 @@ const Home: NextPage = () => {
       </Head>
       <SectionHeader />
       <SectionGroup />
-      <main>
-        <h1>Estrutura Inicial</h1>
-      </main>
     </>
   )
 }
