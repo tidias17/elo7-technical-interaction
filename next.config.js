@@ -4,7 +4,8 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: "/api/:path*",
+        // matching all API routes
+        source: "http://www.mocky.io/v2/5d6fb6b1310000f89166087b",
         headers: [
           { key: "Access-Control-Allow-Credentials", value: "true" },
           { key: "Access-Control-Allow-Origin", value: "*" },
