@@ -7,4 +7,8 @@ export const StyledContainer = styled.section`
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 20px 80px;
+  > h2 {
+    text-align: center;
+    margin-bottom: 32px;
+  }
 `;

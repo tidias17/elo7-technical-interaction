@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
 export const StyledContainer = styled.section`
-  h1 {
-    text-align: left;
+  width: 100%;
+  h2 {
+    margin-bottom: 32px;
   }
 `
