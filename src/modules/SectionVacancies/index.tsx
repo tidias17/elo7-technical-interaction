@@ -8,7 +8,7 @@ import {
 
 const SectionVacancies = () => {
 
-  const { data: getVAcancies, isLoading }: any = useQuery(['query-get-vacancies'], `http://www.mocky.io/v2/5d6fb6b1310000f89166087b`)
+  const { data: getVAcancies, isLoading }: any = useQuery(['query-get-vacancies'], `https://www.mocky.io/v2/5d6fb6b1310000f89166087b`)
 
   return (
     <StyledContainer id="vacancies">
