@@ -6,7 +6,9 @@ import {
 const SectionTeam = () => {
 
   return (
-    <p>dsa</p>
+    <StyledContainer>
+      
+    </StyledContainer>
   )
 }
 

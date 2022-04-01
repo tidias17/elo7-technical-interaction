@@ -19,6 +19,7 @@ export const typographys: any = {
   subtitle: {
     tag: 'h2',
     style: css`
+      width: 100%;
       font-size: 18px;
       font-weight: 700;
       color: ${theme.colors.normal};
@@ -28,8 +29,10 @@ export const typographys: any = {
   complementarytitle: {
     tag: 'h3',
     style: css`
+      width: 100%;
       font-size: 18px;
       font-weight: 600;
+      font-style: italic;
       color: ${theme.colors.brand};
     `
   },
@@ -53,6 +56,7 @@ export const typographys: any = {
   normal: {
     tag: 'p',
     style: css`
+      width: 100%;
       font-size: 16px;
       font-weight: 400;
       color: ${theme.colors.normal};

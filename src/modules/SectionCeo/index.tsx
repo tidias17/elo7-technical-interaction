@@ -1,12 +1,29 @@
-
+import Typography from "components/Typography";
 import {
-  StyledContainer
+  StyledContainer,
+  StyledVideo,
+  StyledContent
 } from "./styled";
 
 const SectionCeo = () => {
 
   return (
-    <p>asd</p>
+    <StyledContainer>
+      <StyledVideo>
+        <img src="./images/placeholder-video.png" />
+      </StyledVideo>
+      <StyledContent>
+      <Typography type="subtitle">
+          Palavra do ceo
+        </Typography>
+        <Typography type="complementarytitle">
+          Carlos Curioni
+        </Typography>
+        <Typography type="normal">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </Typography>
+      </StyledContent>
+    </StyledContainer>
   )
 }
 
