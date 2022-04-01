@@ -2,13 +2,17 @@ import styled from 'styled-components';
 
 export const StyledContainer = styled.section`
   display: flex;
-  flex-wrap: no-wrap;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px 80px;
   @media(max-width: 840px) {
     flex-wrap: wrap;
+    padding: 20px;
   }
 `;
 
-export const StyledValues = styled.section`
-  
+export const StyledLink = styled.section`
+  width: 100%;
+  display: felx;
+  justify-content: center;
 `;

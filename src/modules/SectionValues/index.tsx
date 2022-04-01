@@ -1,6 +1,8 @@
 import IndividualValue from "components/IndividualValue";
+import Link from "components/Link";
 import {
-  StyledContainer
+  StyledContainer,
+  StyledLink
 } from "./styled";
 
 const SectionValue = () => {
@@ -27,6 +29,9 @@ const SectionValue = () => {
       {values.map((item, index) =>
         <IndividualValue value={item} key={index} />
       )}
+      <StyledLink>
+        <Link text="Saiba Mais >>" href="#" />
+      </StyledLink>
     </StyledContainer>
   )
 }

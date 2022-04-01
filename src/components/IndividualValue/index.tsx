@@ -14,7 +14,12 @@ type ValueProps = {
 const IndividualValue = ({ value }: IndividualValueProps) => {
   return (
     <StyledContainer>
+      <img
+        src={`./images/${value.icon}.png`}
+        alt={`icone referente ao valor ${value.icon}`}
+      />
       <Typography type="subtitle">{value.title}</Typography>
+      <Typography type="normal">{value.description}</Typography>
     </StyledContainer>
   )
 }
