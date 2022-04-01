@@ -11,4 +11,7 @@ export const StyledContainer = styled.section`
     text-align: center;
     margin-bottom: 32px;
   }
+  @media(max-width: 840px) {
+    padding: 20px;
+  }
 `;
