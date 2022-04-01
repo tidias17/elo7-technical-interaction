@@ -5,9 +5,15 @@ export const typographys: any = {
   title: {
     tag: 'h1',
     style: css`
-      font-size: 28px;
+      width: 100%;
+      font-size: 48px;
       font-weight: 700;
       color: ${theme.colors.white};
+      text-align: center;
+      text-shadow: 1px 1px 2px ${theme.colors.gray};
+      @media (max-width: 840px) {
+        font-size: 32px;
+      }
     `
   },
   subtitle: {
@@ -35,12 +41,19 @@ export const typographys: any = {
       color: ${theme.colors.link};
       text-transform: uppercase;
       text-decoration: none;
+      &:hover {
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        opacity: 0.8;
+        color: ${theme.colors.link};
+      }
     `
   },
   normal: {
     tag: 'p',
     style: css`
-      font-size: 14px;
+      font-size: 16px;
       font-weight: 400;
       color: ${theme.colors.normal};
     `
