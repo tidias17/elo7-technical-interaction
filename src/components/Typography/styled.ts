@@ -6,11 +6,11 @@ export const typographys: any = {
     tag: 'h1',
     style: css`
       width: 100%;
-      font-size: 48px;
-      font-weight: 700;
+      font-size: 72px;
+      font-weight: 600;
       color: ${theme.colors.white};
       text-align: center;
-      text-shadow: 1px 1px 2px ${theme.colors.gray};
+      text-shadow: 2px 2px 4px ${theme.colors.shadow};
       @media (max-width: 840px) {
         font-size: 32px;
       }

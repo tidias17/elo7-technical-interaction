@@ -13,7 +13,7 @@ export const StyledHead = styled.section`
   justify-content: center;
   position: relative;
   h1 {
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     z-index: 2;
   }
   @media(max-width: 840px) {
@@ -36,8 +36,9 @@ export const StyledImage = styled.section`
 
 
 export const StyledContent = styled.section`
-  width: 100%;
   padding: 32px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
   p {
     text-align: center;
   }

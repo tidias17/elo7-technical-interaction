@@ -33,4 +33,8 @@ export const StyledGlobal = createGlobalStyle`
     text-decoration: none;
     color: ${theme.colors.black};
   }
+  .sectionClass {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 `

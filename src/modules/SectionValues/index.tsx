@@ -26,12 +26,12 @@ const SectionValue = () => {
   ]
 
   return (
-    <StyledContainer>
+    <StyledContainer className="sectionClass">
       {values.map((item, index) =>
         <IndividualValue value={item} key={index} />
       )}
       <StyledLink>
-        <Link text="Saiba Mais >>" href="#" />
+        <Link text="Saiba Mais" href="#" />
       </StyledLink>
       <StyledEnvironment />
     </StyledContainer>

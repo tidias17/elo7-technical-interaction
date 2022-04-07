@@ -7,7 +7,7 @@ import SectionVacancies from 'modules/SectionVacancies'
 
 const Home: NextPage = () => {
   return (
-    <>
+    <html lang="pt-br">
       <Head>
         <title>Elo7 | Technical Interaction</title>
         <meta name="Elo7" content="Technical Interaction Elo7" />
@@ -18,12 +18,16 @@ const Home: NextPage = () => {
           href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
           rel="stylesheet"
         />
+        <meta name="description" content="Interação Técnica Elo7" />
+        <meta name="keywords" content="Elo7, Vagas, Tecnologia" />
+        <meta name="author" content="Thiago Almeida" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <SectionHeader />
       <SectionGroup />
       <SectionValues />
       <SectionVacancies />
-    </>
+    </html>
   )
 }
 

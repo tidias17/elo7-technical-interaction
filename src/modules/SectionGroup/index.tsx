@@ -7,7 +7,7 @@ import {
 const SectionGroup = () => {
 
   return (
-    <StyledContainer>
+    <StyledContainer className="sectionClass">
       <SectionCeo />
       <SectionTeam />
     </StyledContainer>

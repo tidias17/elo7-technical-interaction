@@ -11,7 +11,7 @@ const SectionVacancies = () => {
   const { data: getVAcancies, isLoading }: any = useQuery(['query-get-vacancies'], `https://www.mocky.io/v2/5d6fb6b1310000f89166087b`)
 
   return (
-    <StyledContainer id="vacancies">
+    <StyledContainer id="vacancies" className="sectionClass" >
       <Typography type="subtitle">
         Vagas em aberto
       </Typography>

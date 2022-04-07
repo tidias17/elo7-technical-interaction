@@ -22,4 +22,11 @@ export const StyledContent = styled.section`
     height: 1px;
     background-color: ${theme.colors.normal};
   }
+  &:after {
+    content: '\u00BB';
+    position: relative;
+    color: ${theme.colors.link};
+    font-size: 20px;
+    left: 10px;
+  }
 `
